@@ -4,13 +4,9 @@ export default function Home() {
   return (
     <div className="flex flex-col w-screen h-screen">
       <div>
-        <div className="absolute text-black">
+        <div className="absolute text-black z-0">
           <div className="flex-col">
-            <div className="flex flex-row">
-              <p className="font-bold">Logo</p>
-              <p>NavBarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</p>
-            </div>
-            <p>textttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
+            <p>textttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
           </div>
         </div>
         <div className="flex justify-end">

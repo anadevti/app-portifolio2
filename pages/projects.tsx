@@ -1,9 +1,11 @@
-export default function AboutMe() {
+function Projects() {
   return (
       <div className="flex flex-col w-screen h-screen">
         <div>
-          about me page
+          projects
         </div>
       </div>
-  )
-};
+  );
+}
+
+export default Projects;

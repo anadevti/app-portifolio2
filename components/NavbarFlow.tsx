@@ -1,12 +1,10 @@
-import { FunctionComponent, useEffect, useState } from "react";
-import Link from "next/link";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { Navbar } from "flowbite-react";
-import Signature from "../resources/assinatura_com_fundo.png";
-import Image from "next/image";
+import {Button } from "flowbite-react";
 
 const NavbarFlow = () => {
   const [activeItem, setActiveItem] = useState<string>("");
+  let [open,setOpen]=useState(false);
 
   const { pathname } = useRouter();
 
@@ -17,97 +15,62 @@ const NavbarFlow = () => {
     if (pathname === "/education") setActiveItem("Education");
     if (pathname === "/projects") setActiveItem("Projects");
     if (pathname === "/fun-facts") setActiveItem("Fun Facts");
-  }, []);
+  }, [pathname]);
 
   console.log("pathname", pathname);
   console.log(activeItem);
+  console.log(pathname === "/");
+
+ let Links = [
+   {name: "Home", link:"/"},
+   {name: "About Me", link: "/about-me"},
+   {name: "Working Experience", link: "/working-experience"},
+   {name: "Education", link: "/education"},
+   {name: "Projects", link: "/projects"}
+ ]
 
   const active = (name: String) => {
     return activeItem === name ? true : false;
   };
 
   return (
-    <nav className="bg-background-dark border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-      <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="https://flowbite.com/" className="flex items-center">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-6 mr-3 sm:h-9"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
-          </span>
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-background-dark dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a
-                href="/"
-                className="block py-2 pl-3 pr-4 text-white transition duration-700 rounded hover:border hover:border-gray-600 md:bg-transparent md:p-0 dark:text-white"
-                aria-current="page"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="about-me"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                About Me
-              </a>
-            </li>
-            <li>
-              <a
-                href="working-experience"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Working Experience
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div className=' w-full fixed top-0 left-0 z-10'>
+          <div className='md:flex items-center bg-background-dark py-4 md:px-10 px-7'>
+              <div className='font-bold text-2xl cursor-pointer flex items-center text-gray-500'>
+                 <span className='text-2xl text-gray-500 mr-1'>
+                     <div>test</div>
+                 </span>
+                  <div>
+                      Giovanna Nascimento
+                  </div>
+              </div>
+
+              <div onClick={()=>setOpen(!open)} className='text-2xl absolute right-8 top-6 cursor-pointer md:hidden'>
+                  <div>test</div>
+              </div>
+
+              <ul className={`grow  md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0
+               w-full md:w-auto pl-80 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'} mr-`}>
+                  {
+                      Links.map((link)=>(
+                          <li key={link.name} className='text-1xl md:my-0 my-7'>
+                              <div className={`flex flex-row items-center`}>
+                                  <a href={link.link} className='text-gray-500 hover:text-white duration-500 mx-3'>{link.name}</a>
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                                  </svg>
+                              </div>
+                          </li>
+                      ))
+                  }
+                  <div className={`flex grow md:justify-end`}>
+                      <Button className={`bg-transparent border border-gray-600 hover:bg-gray-800`}>
+                          <p>Contact me</p>
+                      </Button>
+                  </div>
+              </ul>
+          </div>
       </div>
-    </nav>
   );
 };
 

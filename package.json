@@ -13,6 +13,7 @@
     "@splinetool/runtime": "^0.9.175",
     "flowbite": "^1.6.0",
     "flowbite-react": "^0.3.7",
+    "ionicons": "^6.0.4",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",

@@ -1,12 +1,12 @@
 import "../styles/globals.css";
 import Navbarflow from "../components/NavbarFlow";
-import { Alert } from "flowbite-react";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
-      <Navbarflow/>
-      <Component {...pageProps} />
+    <div className={'flex flex-col'}>
+        <Navbarflow></Navbarflow>
+        <div className={`w-full h-20`}></div>
+        <Component {...pageProps}/>
     </div>
   );
 }
