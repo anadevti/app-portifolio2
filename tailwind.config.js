@@ -7,6 +7,11 @@ module.exports = {
     "./public/**/*.html",
     "./components/**/*.{tsx, ts}"],
   theme: {
+    fontFamily: {
+      'kaushan': ['Kaushan Script'],
+      'roboto-moto': ['Roboto Mono'],
+      'roboto': ['Roboto'],
+    },
     extend: {
       colors: {
         'background-dark': '#0E1129',
