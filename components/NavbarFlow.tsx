@@ -65,8 +65,9 @@ const NavbarFlow = () => {
                       }
                   </div>
                   <div className={`flex md:justify-end`}>
-                      <Button className={`bg-transparent border border-gray-600 hover:bg-gray-800`}>
-                          <p>Contact me</p>
+                      <Button className={`bg-transparent font-roboto font-bold border border-gray-600 hover:bg-gray-800`}
+                              onClick={()=>window.open('mailto:gio.nacimento31@gmail.com')} >
+                          <p>Email me</p>
                       </Button>
                   </div>
               </ul>
