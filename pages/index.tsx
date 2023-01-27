@@ -14,7 +14,7 @@ export default function Home() {
     delaySpeed: 2000,
   });
   return (
-    <div className="flex w-full h-full text-white">
+    <div className="flex w-full h-full">
       <div className={"mx-10 flex lg:flex-row md:flex-col sm:flex-col grow items-center"}>
         <div className={"flex flex-col items-center"}>
           <div style={{height:'26rem'}} className={"w-1 bg-gradient-to-b from-orange-600 to-purple-600"}></div>
