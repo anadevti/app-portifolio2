@@ -1,7 +1,8 @@
 import Spline from "@splinetool/react-spline";
 import {Cursor, useTypewriter} from "react-simple-typewriter";
 import {SocialIcon} from "react-social-icons";
-
+import Image from "next/image";
+import Profile from "../resources/ProfilePic.png"
 export default function Home() {
   const [text, count] = useTypewriter({
     words: [
@@ -22,7 +23,8 @@ export default function Home() {
           <SocialIcon url="https://github.com/Wegxx"
                       fgColor="white" bgColor={"transparent"} className={"cursor-pointer w-10 h-10 mt-3"}/>
         </div>
-        <div className={"basis-1/2 text-center text-orange-500"}>
+        <div className={"basis-2/6 text-center text-orange-500"}>
+          <Image className={"rounded-full my-2"} src={Profile} width={180} height={180}></Image>
           <h2 className={"lg:text-5xl md:text-2xl m-6 text-gray-300 font-bold"}>
             Hi my name is
           </h2>
@@ -39,9 +41,9 @@ export default function Home() {
             diverse freelance works as an Illustrator and Graphic Designer from elaborating visual identity to character concept art.
           </p>
         </div>
-        <div>
+        <div style={{height:'50rem', width:'50rem'}}
+            className={'grow'}>
           <Spline
-              className={"basis-1/2"}
               scene="https://prod.spline.design/zVYA1SI7JlFY5owQ/scene.splinecode"
           />
         </div>
