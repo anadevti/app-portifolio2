@@ -16,6 +16,11 @@ module.exports = {
       colors: {
         'background-dark': '#0E1129',
       },
+      height: {
+        '100': '26rem',
+        '106': '30rem',
+        '108': '36rem',
+      },
       flexBasis: {
         '1/7': '14.2857143%',
         '2/7': '28.5714286%',

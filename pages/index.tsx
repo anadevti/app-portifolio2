@@ -41,8 +41,7 @@ export default function Home() {
             diverse freelance works as an Illustrator and Graphic Designer from elaborating visual identity to character concept art.
           </p>
         </div>
-        <div style={{height:'50rem', width:'50rem'}}
-            className={'grow'}>
+        <div style={{height:'50rem', width:'50rem'}} className={'grow'}>
           <Spline
               scene="https://prod.spline.design/zVYA1SI7JlFY5owQ/scene.splinecode"
           />
