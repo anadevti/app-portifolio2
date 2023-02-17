@@ -15,7 +15,7 @@ export default function AboutMe() {
     });
   return (
       <div className="pt-2 flex flex-col h-full w-full">
-          <div className={"flex h-56 justify-center items-center"}>
+          <div className={"flex h-40 justify-center items-center"}>
               <div>
                   <h1>
                       <span className={"lg:text-5xl md:text-2xl font-roboto-moto text-orange-500"}>{text}</span>
@@ -23,25 +23,12 @@ export default function AboutMe() {
                   </h1>
               </div>
           </div>
-          <div className={"flex flex-row h-108"}>
-              <div className={"flex basis-1/3 items-center justify-end pl-12"}>
-                  {/*<div className="flex flex-col px-6 pt-1 flex-grow">*/}
-                  {/*    <div className="mt-5 flex-grow"*/}
-                  {/*         style={{marginLeft: '-1.5rem', marginRight: '-1.5rem'}}>*/}
-                  {/*        <div className="grid lg:grid-rows-2 gap-12">*/}
-                  {/*            {services.map(service => (*/}
-                  {/*                // eslint-disable-next-line react/jsx-key*/}
-                  {/*                <div className="lg:col-span-1">*/}
-                  {/*                    <ServiceCard service={service}/>*/}
-                  {/*                </div>*/}
-                  {/*            ))}*/}
-                  {/*        </div>*/}
-                  {/*    </div>*/}
-                  {/*</div>*/}
-                  <Spline scene="https://prod.spline.design/X2QsfhxG8mwDXUv2/scene.splinecode" />
+          <div className={"flex flex-row h-124"}>
+              <div className={"flex basis-3/7 items-center justify-end pl-12 mb-40"}>
+                  <Spline scene="https://draft.spline.design/8HJos-FGXejiEHM2/scene.splinecode" />
               </div>
-              <div className={"basis-2/3"}>
-                  <div className="grid md:grid-cols-2 gap-6 pr-10 pl-12">
+              <div className={"basis-4/7"}>
+                  <div className="grid md:grid-cols-2 gap-6 pr-10 pl-12 pt-10">
                       <div>
                           <h5 className="my-3 text-2x1 font-bold text-gray-300">Programming languages & Frameworks</h5>
                           <div className="my-2">
