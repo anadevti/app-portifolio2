@@ -4,7 +4,7 @@ import {SocialIcon} from "react-social-icons";
 import Image from "next/image";
 import Profile from "../resources/ProfilePic.png"
 export default function Home() {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       "<Giovanna Nascimento/>",
       "<Wegx for gaming friends/>",
@@ -17,7 +17,7 @@ export default function Home() {
     <div className="flex w-full h-full">
       <div className={"mx-10 flex lg:flex-row md:flex-col sm:flex-col grow items-center"}>
         <div className={"flex flex-col items-center"}>
-          <div style={{height:'26rem'}} className={"w-1 bg-gradient-to-b from-orange-600 to-purple-600"}></div>
+          <div style={{height:'33rem'}} className={"w-1 bg-gradient-to-b from-orange-600 to-purple-600"}></div>
           <SocialIcon url="https://www.linkedin.com/in/giovanna-nascimento-reis-126b01198/"
           fgColor="white" bgColor={"transparent"} className={"cursor-pointer w-10 h-10 mt-3"}/>
           <SocialIcon url="https://github.com/Wegxx"
@@ -28,7 +28,7 @@ export default function Home() {
           <h2 className={"lg:text-5xl md:text-2xl m-6 text-gray-300 font-bold"}>
             Hi my name is
           </h2>
-          <h1>
+          <h1 className={"h-24"}>
             <span className={"lg:text-5xl md:text-2xl font-roboto-moto"}>{text}</span>
             <Cursor cursorColor={"#FF8000"}/>
           </h1>

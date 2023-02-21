@@ -1,10 +1,13 @@
 import {RiComputerLine} from "react-icons/ri";
-import {IService, ISkill} from "./type";
-import {FaTools} from "react-icons/fa";
-import {AiOutlineApi} from "react-icons/ai";
-import {MdDeveloperMode} from "react-icons/md";
-import {AiOutlineAntDesign} from "react-icons/ai";
-import {BsCircleFill} from "react-icons/bs";
+import {IService, ISkill, ITooltipIcons} from "./type";
+import {FaAws, FaJava, FaReact, FaTools} from "react-icons/fa";
+import {BsCircleFill, BsBrushFill} from "react-icons/bs";
+import {
+    SiAdobeillustrator, SiAdobephotoshop, SiArduino, SiBlender, SiC, SiCplusplus, SiCss3, SiHtml5,
+    SiJavascript, SiSiemens, SiSpring, SiStorybook, SiTypescript, SiUnity, SiMicrosoftoffice, SiWindows
+} from "react-icons/si";
+import {TbBrandKotlin} from "react-icons/tb";
+import {GrMysql} from "react-icons/gr";
 
 export const services: IService[] = [
     {
@@ -22,7 +25,7 @@ export const services: IService[] = [
 export const languages: ISkill[] = [
     {
         name: 'Python',
-        level: '55%',
+        level: '50%',
         Icon: BsCircleFill
     },
     {
@@ -97,5 +100,109 @@ export  const tools: ISkill[] = [
         name:'Lader (PLC)',
         level: '70%',
         Icon: BsCircleFill
+    },
+]
+export const illustrationIcons: ITooltipIcons[] = [
+    {
+        tooltip:'PaintToolSai',
+        Icon: BsBrushFill,
+    },
+    {
+        tooltip:'Photoshop',
+        Icon: SiAdobephotoshop,
+    },
+    {
+        tooltip:'Illustrator',
+        Icon: SiAdobeillustrator,
+    },
+]
+
+export const hotmartIcons: ITooltipIcons[] = [
+      {
+           tooltip:'Kotlin',
+            Icon: TbBrandKotlin
+      },
+       {
+          tooltip:'Java',
+           Icon: FaJava
+        },
+        {
+            tooltip:'SpringBoot',
+            Icon: SiSpring
+        },
+        {
+            tooltip:'Amazon Web Services',
+            Icon: FaAws
+        },
+        {
+            tooltip:'MySQL',
+            Icon: GrMysql
+        },
+        {
+            tooltip:'JavaScript',
+            Icon: SiJavascript
+        },
+        {
+            tooltip:'TypeScript',
+            Icon: SiTypescript
+        },
+        {
+            tooltip:'React',
+            Icon: FaReact
+        },
+        {
+            tooltip:'Storybook',
+            Icon: SiStorybook
+        },
+
+]
+
+export const collegeIcons: ITooltipIcons[] = [
+        {
+            tooltip:'Siemens(CLP-Lader)',
+            Icon: SiSiemens,
+        },
+        {
+            tooltip:'C',
+            Icon: SiC,
+        },
+        {
+            tooltip:'C++',
+            Icon: SiCplusplus,
+        },
+        {
+            tooltip:'JavaScript',
+            Icon: SiJavascript,
+        },
+        {
+            tooltip:'HTML5',
+            Icon: SiHtml5,
+        },
+        {
+            tooltip:'CSS3',
+            Icon: SiCss3,
+        },
+        {
+            tooltip:'Unity',
+            Icon: SiUnity,
+        },
+        {
+            tooltip:'Blender',
+            Icon: SiBlender,
+        },
+        {
+            tooltip:'Arduino',
+            Icon: SiArduino,
+        },
+]
+
+export const schoolIcons: ITooltipIcons[] = [
+    {
+        tooltip:'Office (Word, Exel and PowerPoint)',
+        Icon: SiMicrosoftoffice,
+    },
+    {
+        tooltip:'Windows',
+        Icon: SiWindows,
     },
 ]

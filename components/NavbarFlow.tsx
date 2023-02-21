@@ -12,9 +12,8 @@ const NavbarFlow = () => {
 
   useEffect(() => {
     if (pathname === "/") setActiveItem("Home");
-    if (pathname === "/about-me") setActiveItem("About Me");
-    if (pathname === "/working-experience") setActiveItem("Working Experience");
-    if (pathname === "/education") setActiveItem("Education");
+    if (pathname === "/skills") setActiveItem("Skills");
+    if (pathname === "/working-experience") setActiveItem("Working Experience & FunFacts");
     if (pathname === "/projects") setActiveItem("Projects");
     if (pathname === "/fun-facts") setActiveItem("Fun Facts");
   }, [pathname]);
@@ -24,16 +23,13 @@ const NavbarFlow = () => {
   console.log(pathname === "/");
 
  let Links = [
-   {name: "Home", link:"/"},
-   {name: "About Me", link: "/about-me"},
-   {name: "Working Experience", link: "/working-experience"},
-   {name: "Education", link: "/education"},
-   {name: "Projects", link: "/projects"}
- ]
+     {name: "Home", link:"/"},
+     {name: "Skills", link: "/skills"},
+     {name: "Working Experience & Education", link: "/working-experience"},
+     {name: "Projects", link: "/projects"},
+     {name: "Fun Facts", link: "/fun-facts"}
 
-  const active = (name: String) => {
-    return activeItem === name ? true : false;
-  };
+ ]
 
   return (
       <div className=' w-full fixed top-0 left-0 z-10'>

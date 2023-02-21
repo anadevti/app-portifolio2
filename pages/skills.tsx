@@ -1,13 +1,10 @@
 import Spline from "@splinetool/react-spline";
-import {languages, tools, services} from "../data";
+import {languages, tools} from "../data";
 import Bar from "../components/Bar";
-import Image from "next/image";
-import Profile from "../resources/ProfilePic.png";
 import {Cursor, useTypewriter} from "react-simple-typewriter";
-import ServiceCard from "../components/ServiceCard";
 
-export default function AboutMe() {
-    const [text, count] = useTypewriter({
+export default function Skills() {
+    const [text] = useTypewriter({
         words: [
             "<My Skils/>",
         ],

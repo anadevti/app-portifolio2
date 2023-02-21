@@ -1,4 +1,4 @@
-function Education() {
+function FunFacts() {
   return (
       <div className="flex flex-col w-screen h-screen">
         <div>
@@ -8,4 +8,4 @@ function Education() {
   );
 }
 
-export default Education;
+export default FunFacts;
