@@ -107,6 +107,24 @@ export  const tools: ISkill[] = [
         Icon: BsCircleFill
     },
 ]
+
+export  const speakingLanguages: ISkill[] = [
+    {
+        name:'Portuguese - Native Speaker',
+        level: '100%',
+        Icon: BsCircleFill
+    },
+    {
+        name:'English - Fluent',
+        level: '90%',
+        Icon: BsCircleFill
+    },
+    {
+        name:'Spanish - Basic',
+        level: '40%',
+        Icon: BsCircleFill
+    },
+]
 export const illustrationIcons: ITooltipIcons[] = [
     {
         tooltip:'PaintToolSai',

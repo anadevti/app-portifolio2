@@ -1,5 +1,5 @@
 import Spline from "@splinetool/react-spline";
-import {languages, tools} from "../data";
+import {languages, speakingLanguages, tools} from "../data";
 import Bar from "../components/Bar";
 import {Cursor, useTypewriter} from "react-simple-typewriter";
 
@@ -34,9 +34,15 @@ export default function Skills() {
                               }
                           </div>
                       </div>
-                      <div>
-                          <h5 className="my-3 text-2x1 font-bold text-gray-300">Tools & Softwares</h5>
-                          <div className="my-2">
+                      <div className={"flex flex-col mt-3"}>
+                          <h5 className="text-2x1 font-bold text-gray-300">Languages</h5>
+                          <div>
+                              {
+                                  speakingLanguages.map(tool => <Bar data={tool} key={tool.name}/> )
+                              }
+                          </div>
+                          <h5 className="text-2x1 font-bold text-gray-300 mt-2">Tools & Softwares</h5>
+                          <div>
                               {
                                   tools.map(tool => <Bar data={tool} key={tool.name}/> )
                               }
@@ -46,7 +52,7 @@ export default function Skills() {
                   <div className={"flex flex-row font-roboto text-gray-200 mx-10 my-4 bg-gray-800 p-4 rounded-xl"}>
                       If you want to see my personal projects where I exemplify some of the knowledge described in this
                       section please
-                      <a href={"/projects"} className={"ml-1 font-bold hover:text-gray-600"}>Access the Projects tab</a>
+                      <a href={"/projects"} className={"ml-1 font-bold hover:text-gray-600 duration-500"}>Access the Projects tab</a>
                   </div>
               </div>
           </div>
