@@ -24,7 +24,7 @@ export default function Skills() {
               <div className={"flex basis-3/7 items-center justify-end pl-12 mb-40"}>
                   <Spline scene="https://draft.spline.design/8HJos-FGXejiEHM2/scene.splinecode" />
               </div>
-              <div className={"basis-4/7"}>
+              <div className={"flex flex-col basis-4/7"}>
                   <div className="grid md:grid-cols-2 gap-6 pr-10 pl-12 pt-10">
                       <div>
                           <h5 className="my-3 text-2x1 font-bold text-gray-300">Programming languages & Frameworks</h5>
@@ -42,6 +42,11 @@ export default function Skills() {
                               }
                           </div>
                       </div>
+                  </div>
+                  <div className={"flex flex-row font-roboto text-gray-200 mx-10 my-4 bg-gray-800 p-4 rounded-xl"}>
+                      If you want to see my personal projects where I exemplify some of the knowledge described in this
+                      section please
+                      <a href={"/projects"} className={"ml-1 font-bold hover:text-gray-600"}>Access the Projects tab</a>
                   </div>
               </div>
           </div>

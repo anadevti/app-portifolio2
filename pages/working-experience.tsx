@@ -30,7 +30,7 @@ function WorkingExperience() {
                   contentStyle={{ background: '#ea580c', color: '#f9fafb' }}
                   contentArrowStyle={{ borderRight: '7px solid  #ea580c' }}
                   date="Sept. 2021 - Present"
-                  iconStyle={{ background: '#ea580c', color: '#fff' }}
+                  iconStyle={{ background: '#ea580c', color: '#fff'}}
                   icon={<MdWork />}
               >
                   <div className={"flex flex-row pb-2"}>

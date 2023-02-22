@@ -4,7 +4,7 @@ import {FaAws, FaJava, FaReact, FaTools} from "react-icons/fa";
 import {BsCircleFill, BsBrushFill} from "react-icons/bs";
 import {
     SiAdobeillustrator, SiAdobephotoshop, SiArduino, SiBlender, SiC, SiCplusplus, SiCss3, SiHtml5,
-    SiJavascript, SiSiemens, SiSpring, SiStorybook, SiTypescript, SiUnity, SiMicrosoftoffice, SiWindows
+    SiJavascript, SiSiemens, SiSpring, SiStorybook, SiTypescript, SiUnity, SiMicrosoftoffice, SiWindows, SiPython
 } from "react-icons/si";
 import {TbBrandKotlin} from "react-icons/tb";
 import {GrMysql} from "react-icons/gr";
@@ -36,6 +36,11 @@ export const languages: ISkill[] = [
     {
         name: 'React',
         level: '65%',
+        Icon: BsCircleFill
+    },
+    {
+        name: 'Next',
+        level: '60%',
         Icon: BsCircleFill
     },
     {
@@ -194,8 +199,11 @@ export const collegeIcons: ITooltipIcons[] = [
             tooltip:'Arduino',
             Icon: SiArduino,
         },
+        {
+            tooltip:'Python',
+            Icon: SiPython,
+        },
 ]
-
 export const schoolIcons: ITooltipIcons[] = [
     {
         tooltip:'Office (Word, Exel and PowerPoint)',
