@@ -3,8 +3,24 @@ import {IService, ISkill, ITooltipIcons} from "./type";
 import {FaAws, FaJava, FaReact, FaTools} from "react-icons/fa";
 import {BsCircleFill, BsBrushFill} from "react-icons/bs";
 import {
-    SiAdobeillustrator, SiAdobephotoshop, SiArduino, SiBlender, SiC, SiCplusplus, SiCss3, SiHtml5,
-    SiJavascript, SiSiemens, SiSpring, SiStorybook, SiTypescript, SiUnity, SiMicrosoftoffice, SiWindows, SiPython
+    SiAdobeillustrator,
+    SiAdobephotoshop,
+    SiArduino,
+    SiBlender,
+    SiC,
+    SiCplusplus,
+    SiCss3,
+    SiHtml5,
+    SiJavascript,
+    SiSiemens,
+    SiSpring,
+    SiStorybook,
+    SiTypescript,
+    SiUnity,
+    SiMicrosoftoffice,
+    SiWindows,
+    SiPython,
+    SiGraphql, SiKibana, SiSonarqube
 } from "react-icons/si";
 import {TbBrandKotlin} from "react-icons/tb";
 import {GrMysql} from "react-icons/gr";
@@ -177,6 +193,42 @@ export const hotmartIcons: ITooltipIcons[] = [
             tooltip:'Storybook',
             Icon: SiStorybook
         },
+
+]
+
+export const hotmartIconsDevI: ITooltipIcons[] = [
+    {
+        tooltip:'Kotlin',
+        Icon: TbBrandKotlin
+    },
+    {
+        tooltip:'Java',
+        Icon: FaJava
+    },
+    {
+        tooltip:'SpringBoot',
+        Icon: SiSpring
+    },
+    {
+        tooltip:'Amazon Web Services',
+        Icon: FaAws
+    },
+    {
+        tooltip:'MySQL',
+        Icon: GrMysql
+    },
+    {
+        tooltip:'GraphQL',
+        Icon: SiGraphql
+    },
+    {
+        tooltip:'Kibana',
+        Icon: SiKibana
+    },
+    {
+        tooltip:'SonarQube',
+        Icon: SiSonarqube
+    },
 
 ]
 

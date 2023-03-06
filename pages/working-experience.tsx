@@ -4,11 +4,12 @@ import 'react-vertical-timeline-component/style.min.css';
 import {MdWork} from "react-icons/md";
 import {IoMdSchool} from "react-icons/io";
 import {Tooltip} from "flowbite-react";
-import {illustrationIcons, hotmartIcons, collegeIcons, schoolIcons} from "../data";
+import {illustrationIcons, hotmartIcons, collegeIcons, schoolIcons, hotmartIconsDevI} from "../data";
+import {GrMysql} from "react-icons/gr";
 
 function WorkingExperience() {
 
-    const [text, count] = useTypewriter({
+    const [text] = useTypewriter({
         words: [
             "<Working Experince & Education/>",
         ],
@@ -16,7 +17,7 @@ function WorkingExperience() {
     });
   return (
       <div className="pt-2 flex flex-col h-full w-full">
-          <div className={"flex h-40 justify-center items-center"}>
+          <div className={"flex h-40 justify-center items-center mb-4"}>
               <div>
                   <h1>
                       <span className={"lg:text-5xl md:text-2xl font-roboto-moto text-orange-500"}>{text}</span>
@@ -29,8 +30,36 @@ function WorkingExperience() {
                   className={"vertical-timeline-element--work font-roboto-moto"}
                   contentStyle={{ background: '#ea580c', color: '#f9fafb' }}
                   contentArrowStyle={{ borderRight: '7px solid  #ea580c' }}
-                  date="Sept. 2021 - Present"
+                  date="Mar. 2023 - Present"
                   iconStyle={{ background: '#ea580c', color: '#fff'}}
+                  icon={<MdWork />}
+              >
+                  <div className={"flex flex-row pb-2"}>
+                      {
+                          hotmartIconsDevI.map(icon => <Tooltip key={icon.tooltip} content={icon.tooltip}>
+                              <icon.Icon className={"mr-2"} color={"#0E1129"}/>
+                          </Tooltip> )
+                      }
+                  </div>
+                  <h3 className="vertical-timeline-element-title font-roboto font-bold text-background-dark text-xl">
+                     Backend Developer I
+                  </h3>
+                  <h4 className="vertical-timeline-element-subtitle font-roboto-moto">Hotmart</h4>
+                  <p className={"font-roboto"}>
+                      - Development of KYC(Know Your Customer) automated solutions, as part of the company's theft and money laundering prevention initiatives. <br/>
+                      - Agile methodologies: Scrum, Kanban. <br/>
+                      - Technologies: Kotlin/Java, GraphQL, AWS(lines, Dynamo, topics, etc... ), Kibana, SonarQube <br/>
+                      - Databases:  SQL, MySQL, MariaDB <br/>
+                      - Stacktrace: Sonar, Kinbana, NewRelic <br/>
+                      - Computer System Software: macOS <br/>
+                  </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                  className={"vertical-timeline-element--work font-roboto-moto"}
+                  contentStyle={{ background: '#C70039', color: '#f9fafb' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #C70039' }}
+                  date="Sept. 2021 - Mar. 2023"
+                  iconStyle={{ background: '#C70039', color: '#fff'}}
                   icon={<MdWork />}
               >
                   <div className={"flex flex-row pb-2"}>
@@ -45,36 +74,20 @@ function WorkingExperience() {
                   </h3>
                   <h4 className="vertical-timeline-element-subtitle font-roboto-moto">Hotmart</h4>
                   <p className={"font-roboto"}>
-                     Write here what I do at Hotmart
+                      - Development of KYC(Know Your Customer) automated solutions, as part of the company's theft and money laundering prevention initiatives. <br/>
+                      - Agile methodologies: Scrum, Kanban. <br/>
+                      - Technologies: Kotlin/Java, React + TypeScript, GraphQL, AWS(lines, Dynamo, topics, etc... ), Storybook <br/>
+                      - Databases:  SQL, MySQL, MariaDB <br/>
+                      - Stacktrace: Sonar, Kinbana, NewRelic <br/>
+                      - Computer System Software: macOS <br/>
                   </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                   className={"vertical-timeline-element--work font-roboto-moto"}
-                  contentStyle={{ background: '#6b7280', color: '#f9fafb' }}
-                  contentArrowStyle={{ borderRight: '7px solid  #6b7280' }}
-                  date="Feb. 2020 - Sept. 2021"
-                  iconStyle={{ background: '#6b7280', color: '#fff' }}
-                  icon={<MdWork />}
-              >
-                  <div className={"flex flex-row pb-2"}>
-                      {
-                          illustrationIcons.map(icon => <Tooltip key={icon.tooltip} content={icon.tooltip}>
-                              <icon.Icon className={"mr-2"} color={"#0E1129"}/>
-                          </Tooltip> )
-                      }
-                  </div>
-                  <h3 className="vertical-timeline-element-title font-roboto font-bold text-background-dark text-xl">2D Illustrator</h3>
-                  <h4 className="vertical-timeline-element-subtitle font-roboto-moto">Freelancer, HaruGraphics Partnership</h4>
-                  <p className={"font-roboto"}>
-                     Write what I did as an 2D Illustrator
-                  </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                  className={"vertical-timeline-element--work font-roboto-moto"}
-                  contentStyle={{ background: '#9333ea', color: '#f9fafb' }}
-                  contentArrowStyle={{ borderRight: '7px solid  #9333ea' }}
-                  date="Feb. 2020 - Dec. 2024"
-                  iconStyle={{ background: '#9333ea', color: '#fff' }}
+                  contentStyle={{ background: '#831843', color: '#f9fafb' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #831843' }}
+                  date="Feb. 2020 - Present (Graduation forecast: Dec. 2024)"
+                  iconStyle={{ background: '#831843', color: '#fff' }}
                   icon={<IoMdSchool />}
               >
                   <div className={"flex flex-row pb-2"}>
@@ -93,10 +106,57 @@ function WorkingExperience() {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                   className={"vertical-timeline-element--work font-roboto-moto"}
-                  contentStyle={{ background: '#6b7280', color: '#f9fafb' }}
-                  contentArrowStyle={{ borderRight: '7px solid  #6b7280' }}
+                  contentStyle={{ background: '#db2777', color: '#f9fafb' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #db2777' }}
+                  date="Jun. 2022 - Mar. 2023"
+                  iconStyle={{ background: '#db2777', color: '#fff' }}
+                  icon={<MdWork />}
+              >
+                  <div className={"flex flex-row pb-2"}>
+                      <Tooltip key={"MySQL"} content={"MySQL"}>
+                              <GrMysql className={"mr-2"} color={"#0E1129"}/>
+                      </Tooltip>
+
+                  </div>
+                  <h3 className="vertical-timeline-element-title font-roboto font-bold text-background-dark text-xl">BPM Project</h3>
+                  <h4 className="vertical-timeline-element-subtitle font-roboto-moto">Freelancer ITC-BH(Cadaver Training Institute)</h4>
+                  <p className={"font-roboto"}>
+                      - Development of BPM(Business Process Management). <br/>
+                      - All interface was made using Interact platform (as requested by the client). <br/>
+                      - The project was design to fit the entire company`s customer journey into the BPM business model. <br/>
+                      - Database: MySQL <br/>
+                      - Agile methodologies: Kanban <br/>
+                  </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                  className={"vertical-timeline-element--work font-roboto-moto"}
+                  contentStyle={{ background: '#c026d3', color: '#f9fafb' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #c026d3' }}
                   date="Feb. 2020 - Sept. 2021"
-                  iconStyle={{ background: '#6b7280', color: '#fff' }}
+                  iconStyle={{ background: '#c026d3', color: '#fff' }}
+                  icon={<MdWork />}
+              >
+                  <div className={"flex flex-row pb-2"}>
+                      {
+                          illustrationIcons.map(icon => <Tooltip key={icon.tooltip} content={icon.tooltip}>
+                              <icon.Icon className={"mr-2"} color={"#0E1129"}/>
+                          </Tooltip> )
+                      }
+                  </div>
+                  <h3 className="vertical-timeline-element-title font-roboto font-bold text-background-dark text-xl">2D Illustrator</h3>
+                  <h4 className="vertical-timeline-element-subtitle font-roboto-moto">Freelancer, HaruGraphics Partnership</h4>
+                  <p className={"font-roboto"}>
+                      - Personalized visual identity, overlays, and stream packs for youtube and twitch channels <br/>
+                      - Emotes, Concept arts, Chibis, Cartoons, Backgrounds, Logos, Social media posts. <br/>
+                      - Individual commitions of mixed art styles <br/>
+                  </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                  className={"vertical-timeline-element--work font-roboto-moto"}
+                  contentStyle={{ background: '#701a75', color: '#f9fafb' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #701a75' }}
+                  date="Feb. 2020 - Sept. 2021"
+                  iconStyle={{ background: '#701a75', color: '#fff' }}
                   icon={<IoMdSchool />}
               >
                   <div className={"flex flex-row pb-2"}>
@@ -115,10 +175,10 @@ function WorkingExperience() {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                   className={"vertical-timeline-element--work font-roboto-moto"}
-                  contentStyle={{ background: '#6b7280', color: '#f9fafb' }}
-                  contentArrowStyle={{ borderRight: '7px solid  #6b7280' }}
+                  contentStyle={{ background: '#581c87', color: '#f9fafb' }}
+                  contentArrowStyle={{ borderRight: '7px solid  #581c87' }}
                   date="Feb. 2017 - Dec. 2018"
-                  iconStyle={{ background: '#6b7280', color: '#fff' }}
+                  iconStyle={{ background: '#581c87', color: '#fff' }}
                   icon={<IoMdSchool />}
               >
                   <div className={"flex flex-row pb-2"}>

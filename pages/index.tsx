@@ -6,7 +6,7 @@ import Profile from "../resources/ProfilePic.png"
 export default function Home() {
   const [text] = useTypewriter({
     words: [
-      "<Giovanna Nascimento/>",
+      "<Giovanna Nascimento Reis/>",
       "<Wegx for gaming friends/>",
       "<The girl who loves to draw and code/>"
     ],
@@ -24,7 +24,7 @@ export default function Home() {
                       fgColor="white" bgColor={"transparent"} className={"cursor-pointer w-10 h-10 mt-3"}/>
         </div>
         <div className={"basis-2/6 text-center text-orange-500"}>
-          <Image className={"rounded-full my-2"} src={Profile} width={180} height={180}></Image>
+          <Image alt={"profileImage"} className={"rounded-full my-2"} src={Profile} width={180} height={180}></Image>
           <h2 className={"lg:text-5xl md:text-2xl m-6 text-gray-300 font-bold"}>
             Hi my name is
           </h2>
