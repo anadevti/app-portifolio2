@@ -234,7 +234,7 @@ export const hotmartIconsDevI: ITooltipIcons[] = [
 
 export const collegeIcons: ITooltipIcons[] = [
         {
-            tooltip:'Siemens(CLP-Lader)',
+            tooltip:'Siemens(PLC-Lader)',
             Icon: SiSiemens,
         },
         {
