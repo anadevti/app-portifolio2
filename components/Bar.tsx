@@ -7,7 +7,7 @@ const Bar: FunctionComponent<{
 }> = ({data:{Icon, level, name},}) => {
     return (
         <div className=" my-4 text-white bg-gray-700 rounded-full">
-            <motion.div className="flex  items-center px-4 py-1 rounded-full bg-gradient-to-r from-orange-600 to-purple-500"
+            <motion.div className="flex font-roboto items-center px-4 py-1 rounded-full bg-gradient-to-r from-orange-600 to-purple-500"
                         style={{width:level}}
                         initial={{width:0}}
                         animate={{

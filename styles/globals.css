@@ -7,3 +7,7 @@ body {
     font-family: sans-serif;
     color: #354358;
   }
+
+#tab > div:nth-child(n+2) {
+    background-color: #d84315 !important;
+}

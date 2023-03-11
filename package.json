@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-tailwind/react": "^1.4.2",
     "@splinetool/react-spline": "^2.2.5",
     "@splinetool/runtime": "^0.9.175",
     "flowbite": "^1.6.0",
