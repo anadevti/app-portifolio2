@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import {Button } from "flowbite-react";
 import Image from "next/image";
 import Signature from "../resources/assinatura_colorida2.0.png"
+import {Button} from "@material-tailwind/react";
 
 const NavbarFlow = () => {
   const [activeItem, setActiveItem] = useState<string>("");
@@ -62,7 +62,10 @@ const NavbarFlow = () => {
                   </div>
                   <div className={`flex md:justify-end`}>
                       <Button className={`bg-background-dark font-roboto font-bold border border-gray-600 hover:bg-gray-800 text-gray-500 hover:text-white duration-500`}
-                              onClick={()=>window.open('mailto:gio.nacimento31@gmail.com')} >
+                              onClick={()=>window.open('mailto:gio.nacimento31@gmail.com')}
+                              color={'gray'}
+                              variant={'text'}
+                      >
                           <p>Email me</p>
                       </Button>
                   </div>
