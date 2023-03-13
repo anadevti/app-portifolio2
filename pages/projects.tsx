@@ -5,45 +5,27 @@ import {
     TabsBody,
     Tab,
     TabPanel,
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
 } from "@material-tailwind/react";
-import {SiGithub} from "react-icons/si";
-import {Tooltip} from "flowbite-react";
+import {projects} from "../data";
+import ServiceCard from "../components/ServiceCard";
 
 
 
 function Projects() {
-    const theme = {
-        tabs: {
-            styles: {
-                base: {
-                    display: "block",
-                    overflow: "overflow-hidden",
-                },
-            },
-        },
-    };
     const [text] = useTypewriter({
         words: [
             "<Projects/>",
         ],
         loop: 1
     });
-    const data = [
+    const tabs = [
         {
             label: "Code Projects",
             value: "codeProjects",
-            desc: `Here you can see all of my code projects.`,
         },
         {
-            label: "React",
-            value: "react",
-            desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
+            label: "Illustration Projects",
+            value: "illustrationProjects",
         },
     ];
   return (
@@ -58,9 +40,9 @@ function Projects() {
           </div>
           <div className={"px-96"}>
               <Tabs id="custom-animation" value="codeProjects" >
-                  <TabsHeader className={"bg-gray-800 font-roboto-moto text-gray-200"}>
-                      {data.map(({ label, value }) => (
-                          <Tab id={"tab"} color={'#0E1129'} className={"font-bold"} key={value} value={value}>
+                  <TabsHeader className={"bg-gray-800 font-roboto-moto"}>
+                      {tabs.map(({ label, value }) => (
+                          <Tab id={"tab"} className={"font-bold text-gray-200"} key={value} value={value}>
                               {label}
                           </Tab>
                       ))}
@@ -72,33 +54,14 @@ function Projects() {
                   }}>
                       <TabPanel key="codeProjects" value="codeProjects">
                           <div className="grid grid-cols-3 gap-6">
-                              <div className={"flex justify-center"}>
-                                  <Card className="w-96 bg-gray-800">
-                                      <CardHeader color="blue" className="relative h-56">
-                                          <img src="https://cdnb.artstation.com/p/assets/images/images/035/548/487/large/giovanna-nascimento-apresentacao-koby.jpg?1615256685" alt="img-blur-shadow" className="h-full w-full"/>
-                                      </CardHeader>
-                                      <CardBody className="text-center bg-gray-800">
-                                          <h1>
-                                              <span className={"lg:text-5xl md:text-2xl font-roboto-moto text-gray-400"}>Title</span>
-                                          </h1>
-                                          <div>Description</div>
-                                      </CardBody>
-                                      <CardFooter className="flex items-center justify-between py-3">
-                                          <Tooltip key={"github"} content={"GitHub"}>
-                                              <SiGithub className={"mr-2"} color={"#0E1129"}/>
-                                          </Tooltip>
-                                      </CardFooter>
-                                  </Card>
-                              </div>
-                              <div className={"flex justify-center"}>
-                                  <div>test2</div>
-                              </div>
-                              <div className={"flex justify-center"}>
-                                  <div>test3</div>
-                              </div>
-                              <div className={"flex justify-center"}>
-                                  <div>test4</div>
-                              </div>
+                              {
+                                  projects.map
+                                  (project =>
+                                      <div key={project.title} className={"flex justify-center pt-10"}>
+                                        <ServiceCard card={project}/>
+                                      </div>
+                                  )
+                              }
                           </div>
                       </TabPanel>
                   </TabsBody>

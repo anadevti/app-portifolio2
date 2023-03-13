@@ -9,5 +9,5 @@ body {
   }
 
 #tab > div:nth-child(n+2) {
-    background-color: #d84315 !important;
+    background-image: linear-gradient(to right, orangered , rebeccapurple) !important;
 }

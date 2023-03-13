@@ -1,14 +1,17 @@
 import {IconType} from "react-icons";
+import {StaticImageData} from "next/image";
 
 export interface ITooltipIcons {
     tooltip: string,
     Icon: IconType
 }
 
-export interface IService{
+export interface ICard{
     title: string,
-    about: string,
-    Icon: IconType
+    description: string,
+    technologies: ITooltipIcons[],
+    link: string,
+    image: StaticImageData
 }
 
 export interface ISkill {

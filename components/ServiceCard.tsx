@@ -1,23 +1,41 @@
 import React, {FunctionComponent} from "react";
-import {IService} from "../type";
+import {ICard} from "../type";
+import {Button, Card, CardBody, CardFooter, CardHeader, Typography} from "@material-tailwind/react";
+import {Tooltip} from "flowbite-react";
+import Image from "next/image";
 
-const ServiceCard: FunctionComponent<{
-    service: IService,
-}> = ({service:{Icon, about, title},
+const ServiceCard: FunctionComponent<{ card: ICard }> = ({card:{technologies, description, title, link, image},
 }) => {
-    const createMarkup = () => {
-        return {
-            __html:about
-        }
-    }
     return (
-        <div className="p-2a flex items-center space-x-4 rounded-lg p-4 border-gray-500">
-            <Icon className="w-20 h-20 text-orange-500"/>
-            <div>
-                <h4 className="font-bold text-gray-300">{title}</h4>
-                <p className={"font-roboto text-gray-500"} dangerouslySetInnerHTML={createMarkup()} />
-            </div>
-        </div>
+        <Card className="w-96 bg-gray-800">
+            <CardHeader color="orange" className="relative h-56 border border-r-pink-500  border-l-pink-500 border-b-orange-500 border-t-purple-500">
+                <Image
+                    src={image}
+                    fill={true}
+                    alt="img-blur-shadow"
+                />
+            </CardHeader>
+            <CardBody className="text-center bg-gray-800">
+                <Typography variant="h5" className="mb-2 text-gray-300 font-roboto-moto">
+                    {title}
+                </Typography>
+                <Typography variant="small" className={"text-gray-400 h-16"}>
+                        {description}
+                </Typography>
+            </CardBody>
+            <CardFooter className="flex items-center justify-between py-3 bg-gray-800 text-gray-300 mb-2">
+                {
+                    technologies.map(icon => <Tooltip key={icon.tooltip} content={icon.tooltip}>
+                        <icon.Icon className={"mr-1"} color={"white"}/>
+                    </Tooltip> )
+                }
+                <a href={link}>
+                    <Button color={'orange'} key={"gitHub"}>
+                        See on GitHub
+                    </Button>
+                </a>
+            </CardFooter>
+        </Card>
     )
 
 }

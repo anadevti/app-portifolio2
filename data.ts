@@ -1,6 +1,5 @@
-import {RiComputerLine} from "react-icons/ri";
-import {IService, ISkill, ITooltipIcons} from "./type";
-import {FaAws, FaJava, FaReact, FaTools} from "react-icons/fa";
+import {ICard, ISkill, ITooltipIcons} from "./type";
+import {FaAws, FaJava, FaReact} from "react-icons/fa";
 import {BsCircleFill, BsBrushFill} from "react-icons/bs";
 import {
     SiAdobeillustrator,
@@ -20,23 +19,75 @@ import {
     SiMicrosoftoffice,
     SiWindows,
     SiPython,
-    SiGraphql, SiKibana, SiSonarqube
+    SiGraphql,
+    SiKibana,
+    SiSonarqube,
+    SiNextdotjs, SiTailwindcss, SiMariadb
 } from "react-icons/si";
 import {TbBrandKotlin} from "react-icons/tb";
 import {GrMysql} from "react-icons/gr";
+import PortifolioImage from "/resources/Portifolio.png"
 
-export const services: IService[] = [
+const portifolioTechlonogies: ITooltipIcons[] = [
     {
-        title: "Programming languages & Frameworks",
-        about: "This section accomplishes some programing languages and frameworks I've studied and worked with over the last years ",
-        Icon: RiComputerLine,
+        tooltip:'React',
+        Icon: FaReact
     },
     {
-        title: "Backend Development",
-        about: "This section accomplishes some programing languages and frameworks I've studied and worked with over the last years ",
-        Icon: FaTools,
+        tooltip:'TypeScript',
+        Icon: SiTypescript
+    },
+    {
+        tooltip:'Next.js',
+        Icon: SiNextdotjs
+    },
+    {
+        tooltip:'TailindCSS',
+        Icon: SiTailwindcss
+    },
+
+]
+
+const userRegisterApiTechlonogies: ITooltipIcons[] = [
+    {
+        tooltip:'Kotlin',
+        Icon: TbBrandKotlin
+    },
+    {
+        tooltip:'SprringBoot',
+        Icon: SiSpring
+    },
+    {
+        tooltip:'MariaDB',
+        Icon: SiMariadb
+    },
+
+]
+
+export const projects: ICard[] = [
+    {
+        title: "Portifolio",
+        description: "Literraly THIS PORTIFOLIO. Here is the code for all the features I developed in this app",
+        technologies: portifolioTechlonogies,
+        link: "https://github.com/Wegxx/app-portifolio2",
+        image: PortifolioImage
+    },
+    {
+        title: "User-register-api",
+        description: "Small CRUD api developed for testing my knowledge acquired during my first year of internship",
+        technologies: userRegisterApiTechlonogies,
+        link: "https://github.com/Wegxx/user-register-api",
+        image: PortifolioImage
+    },
+    {
+        title: "User-register-api",
+        description: "Small CRUD api developed",
+        technologies: userRegisterApiTechlonogies,
+        link: "https://github.com/Wegxx/user-register-api",
+        image: PortifolioImage
     },
 ]
+
 
 export const languages: ISkill[] = [
     {

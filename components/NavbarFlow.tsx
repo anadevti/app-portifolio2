@@ -36,7 +36,7 @@ const NavbarFlow = () => {
           <div className='flex md:flex items-center bg-background-dark py-5 md:px-10 px-7'>
               <div className='font-bold font-roboto text-2xl cursor-pointer h-12 items-center flex text-gray-500'>
                  <span className=' w-16 text-gray-500'>
-                     <Image src={Signature}></Image>
+                     <Image alt={"signature"} src={Signature}></Image>
                  </span>
               </div>
 
@@ -61,7 +61,7 @@ const NavbarFlow = () => {
                       }
                   </div>
                   <div className={`flex md:justify-end`}>
-                      <Button className={`bg-transparent font-roboto font-bold border border-gray-600 hover:bg-gray-800`}
+                      <Button className={`bg-background-dark font-roboto font-bold border border-gray-600 hover:bg-gray-800 text-gray-500 hover:text-white duration-500`}
                               onClick={()=>window.open('mailto:gio.nacimento31@gmail.com')} >
                           <p>Email me</p>
                       </Button>
