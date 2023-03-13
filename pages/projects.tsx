@@ -6,7 +6,7 @@ import {
     Tab,
     TabPanel,
 } from "@material-tailwind/react";
-import {projects} from "../data";
+import {projects} from "../data/codeProjectsData";
 import ServiceCard from "../components/ServiceCard";
 
 
