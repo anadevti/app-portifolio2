@@ -8,6 +8,8 @@ import {
 } from "@material-tailwind/react";
 import {projects} from "../data/codeProjectsData";
 import ServiceCard from "../components/ServiceCard";
+import IllustrationsServiceCard from "../components/IllustrationsServiceCard";
+import {projectsIllustration} from "../data/illustrationProjectsData";
 
 
 
@@ -59,6 +61,18 @@ function Projects() {
                                   (project =>
                                       <div key={project.title} className={"flex justify-center pt-10"}>
                                         <ServiceCard card={project}/>
+                                      </div>
+                                  )
+                              }
+                          </div>
+                      </TabPanel>
+                      <TabPanel key="illustrationProjects" value="illustrationProjects">
+                          <div className="grid grid-cols-3 gap-6">
+                              {
+                                  projectsIllustration.map
+                                  (project =>
+                                      <div key={project.title} className={"flex justify-center pt-10"}>
+                                          <IllustrationsServiceCard card={project}/>
                                       </div>
                                   )
                               }
