@@ -8,6 +8,10 @@ module.exports = withMT({
     "./public/**/*.html",
     "./components/**/*.{tsx, ts}"],
   theme: {
+    screens: {
+      'sm': '280px',
+      // => @media (min-width: 576px) { ... }
+    },
     fontFamily: {
       'kaushan': ['Kaushan Script'],
       'roboto-moto': ['Roboto Mono'],
