@@ -49,7 +49,7 @@ const NavbarFlow = () => {
  ]
 
     return (
-        <div className="w-full fixed top-0 left-0 z-10" ref={navbarRef}>
+        <div className="w-full fixed absolute top-0 z-10 grow" ref={navbarRef}>
             <div className="flex md:flex items-center bg-background-dark py-5 md:px-10 px-7">
                 <div className="font-bold font-roboto text-2xl cursor-pointer h-12 items-center flex text-gray-500">
           <span className="w-16 text-gray-500">
