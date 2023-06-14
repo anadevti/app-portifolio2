@@ -34,6 +34,7 @@ module.exports = withMT({
         '122': '50rem',
         '124': '52rem',
         '130': '60rem',
+        'screen2': '80vw'
 
       },
       width: {

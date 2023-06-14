@@ -2,8 +2,6 @@ import React, {useEffect, useRef, useState} from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Signature from "../resources/assinatura_colorida2.0.png"
-import {Button} from "@material-tailwind/react";
-
 const NavbarFlow = () => {
   const [activeItem, setActiveItem] = useState<string>("");
   let [open,setOpen]=useState(false);
@@ -18,6 +16,7 @@ const NavbarFlow = () => {
     if (pathname === "/working-experience") setActiveItem("Working Experience & FunFacts");
     if (pathname === "/projects") setActiveItem("Projects");
     if (pathname === "/fun-facts") setActiveItem("Fun Facts");
+    if (pathname === "/contact") setActiveItem("contact");
   }, [pathname]);
 
     useEffect(() => {
@@ -44,7 +43,8 @@ const NavbarFlow = () => {
      {name: "Skills", link: "/skills"},
      {name: "Working Experience & Education", link: "/working-experience"},
      {name: "Projects", link: "/projects"},
-     {name: "Fun Facts", link: "/fun-facts"}
+     {name: "Fun Facts", link: "/fun-facts"},
+     {name: "Contact", link: "/contact"}
 
  ]
 
@@ -61,7 +61,7 @@ const NavbarFlow = () => {
                     <div>test</div>
                 </div>
 
-                <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto left-0 w-full md:w-auto items-center transition-all duration-500 ease-in ${open ? 'block' : 'hidden'} md:flex-grow md:justify-end md:space-x-4 md:space-y-0 space-y-4 bg-background-dark sm:pt-60 lg:pt-4 md:pt-5 md:bg-transparent`}>
+                <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto left-0 w-full md:w-auto items-center transition-all duration-500 ease-in ${open ? 'block' : 'hidden'} md:flex-grow md:justify-end md:space-x-4 md:space-y-0 space-y-4 bg-background-dark sm:pt-56 lg:pt-4 md:pt-5 md:bg-transparent`}>
                     {Links.map((link) => (
                         <li key={link.name} className="text-1xl md:my-0 sm:my-0 sm:mx-2 my-7">
                             <div className="flex flex-row items-center">
@@ -72,14 +72,6 @@ const NavbarFlow = () => {
                             </div>
                         </li>
                     ))}
-                    <Button
-                        className="sm:mx-2 bg-background-dark font-roboto font-bold border border-gray-600 hover:bg-gray-800 text-gray-500 hover:text-white duration-500"
-                        onClick={() => window.open('mailto:gio.nacimento31@gmail.com')}
-                        color="gray"
-                        variant="text"
-                    >
-                        <p>Email me</p>
-                    </Button>
                 </ul>
             </div>
         </div>
