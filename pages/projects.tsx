@@ -32,7 +32,7 @@ function Projects() {
     ];
   return (
       <div className="pt-2 flex flex-col">
-          <div className={"flex h-40 justify-center items-center mb-4"}>
+          <div className={"flex sm:h-20 h-40 justify-center items-center mb-4"}>
               <div>
                   <h1>
                       <span className={"lg:text-5xl md:text-2xl font-roboto-moto text-orange-500"}>{text}</span>
@@ -40,9 +40,9 @@ function Projects() {
                   </h1>
               </div>
           </div>
-          <div className={"px-96"}>
+          <div className={"lg:px-96 sm:p-2"}>
               <Tabs id="custom-animation" value="codeProjects" >
-                  <TabsHeader className={"bg-gray-800 font-roboto-moto"}>
+                  <TabsHeader className={"z-0 bg-gray-800 font-roboto-moto"}>
                       {tabs.map(({ label, value }) => (
                           <Tab id={"tab"} className={"font-bold text-gray-200"} key={value} value={value}>
                               {label}
@@ -55,7 +55,7 @@ function Projects() {
                       unmount: { y: 250 },
                   }}>
                       <TabPanel key="codeProjects" value="codeProjects">
-                          <div className="grid grid-cols-3 gap-6">
+                          <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-6">
                               {
                                   projects.map
                                   (project =>
@@ -67,7 +67,7 @@ function Projects() {
                           </div>
                       </TabPanel>
                       <TabPanel key="illustrationProjects" value="illustrationProjects">
-                          <div className="grid grid-cols-3 gap-6">
+                          <div className="grid lg:grid-cols-3 lg:grid-cols-1 gap-6">
                               {
                                   projectsIllustration.map
                                   (project =>
