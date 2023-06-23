@@ -50,7 +50,7 @@ export default function Home() {
                         </div>
                         <p className={"p-4 text-gray-300 font-roboto text-sm "}>
                             Automated smart solutions studant and fascinated by programming and development I believe is possible to change
-                            people’s lives with creativity, agility and technology. I'm currently 21 years old and bachelor's graduating
+                            people’s lives with creativity, agility and technology. I am currently 21 years old and graduating
                             in Control and Automation Engineering by PUC Minas. Today, along with my studies, I work as Backend Developer
                             for Hotmart 🚀🔥and I must say that I’m completely involved in the career. With more than
                             seven years of drawing by passion, in my free time over the last one and a half years, I accomplished dozens of
@@ -78,7 +78,7 @@ export default function Home() {
                     </h1>
                     <p className={"p-10 text-gray-300 font-roboto text-justify mx-auto max-w-3xl"}>
                         Automated smart solutions studant and fascinated by programming and development I believe is possible to change
-                        people’s lives with creativity, agility and technology. I'm currently 21 years old and bachelor's graduating
+                        people’s lives with creativity, agility and technology. I am currently 21 years old and graduating
                         in Control and Automation Engineering by PUC Minas. Today, along with my studies, I work as Backend Developer
                         for Hotmart 🚀🔥and I must say that I’m completely involved in the career. With more than
                         seven years of drawing by passion, in my free time over the last one and a half years, I accomplished dozens of
