@@ -17,7 +17,7 @@ function WorkingExperience() {
     });
   return (
       <div className="pt-2 flex flex-col h-full w-full">
-          <div className={"flex h-40 justify-center items-center mb-4"}>
+          <div className={"flex lg:h-40 sm:h-20 justify-center items-center mb-4"}>
               <div>
                   <h1>
                       <span className={"lg:text-5xl md:text-2xl font-roboto-moto text-orange-500"}>{text}</span>
