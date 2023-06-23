@@ -67,7 +67,7 @@ function Projects() {
                           </div>
                       </TabPanel>
                       <TabPanel key="illustrationProjects" value="illustrationProjects">
-                          <div className="grid lg:grid-cols-3 lg:grid-cols-1 gap-6">
+                          <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-6">
                               {
                                   projectsIllustration.map
                                   (project =>
