@@ -69,7 +69,7 @@ function FunFacts() {
                           </AccordionHeader>
                           <AccordionBody className={"font-roboto text-gray-400"}>
                               I already had some friends that encouraged me to follow the career but it was when I entered college I really put a hand
-                              into coding. I first started with C then C++ and C#, followed by JS + HTML and CC, React, Kotlin/Java, and Python. At this point
+                              into coding. I first started with C then C++ and C#, followed by JS + HTML and CSS, React, Kotlin/Java, and Python. At this point,
                               I consider myself really involved in following a developing path in this area and I already think about attempting a graduate course
                               in Software Engineering or similar.
                           </AccordionBody>
@@ -79,7 +79,7 @@ function FunFacts() {
                               Favorite game?
                           </AccordionHeader>
                           <AccordionBody className={"font-roboto text-gray-400"}>
-                              There are many games that I consider experiences to remember in my life BUT if I had to pick a winner it
+                              There are many games that I consider experiences to remember in my life BUT if I had to pick a winner
                               the trophy would definitely go to The Last Of Us.
                           </AccordionBody>
                       </Accordion>

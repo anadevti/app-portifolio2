@@ -79,14 +79,16 @@ export default function Home() {
                     <p className={"p-10 text-gray-300 font-roboto text-justify mx-auto max-w-3xl"}>
                         Automated smart solutions studant and fascinated by programming and development I believe is possible to change
                         people’s lives with creativity, agility and technology. I am currently 21 years old and graduating
-                        in Control and Automation Engineering by PUC Minas. Today, along with my studies, I work as Backend Developer
+                        in Control and Automation Engineering by PUC Minas. Today, along with my studies, I work as Software Engineer
                         for Hotmart 🚀🔥and I must say that I’m completely involved in the career. With more than
                         seven years of drawing by passion, in my free time over the last one and a half years, I accomplished dozens of
                         diverse freelance works as an Illustrator and Graphic Designer from elaborating visual identity to character concept art.
                     </p>
                 </div>
             </div>
-            <div className={'grow h-122 w-122 '}><Spline scene="https://prod.spline.design/zVYA1SI7JlFY5owQ/scene.splinecode"/></div>
+            <div className={'grow h-122 w-122 '}>
+                <Spline scene="https://prod.spline.design/zVYA1SI7JlFY5owQ/scene.splinecode" />
+            </div>
         </div>)
   )
 }

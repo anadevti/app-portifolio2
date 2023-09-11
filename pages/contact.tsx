@@ -12,7 +12,7 @@ function Contact() {
                   Personal Contact
               </Typography>
               <Typography className="mt-1 font-roboto text-gray-500">
-                  Here you can see my preferable contact ways.
+                  Here you can see my preferable ways to contact me.
               </Typography>
               <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
                   <div className="mb-4 flex flex-col gap-6">
