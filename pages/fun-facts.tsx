@@ -16,13 +16,13 @@ function FunFacts() {
 
     const [text] = useTypewriter({
         words: [
-            "<Fun Facts (if u wanna know ;P)/>",
+            "<Fun Facts/>",
         ],
         loop: 1
     });
   return (
       <div className="flex flex-col">
-          <div className={"flex h-40 justify-center items-center mb-4"}>
+          <div className={"flex lg:h-40 sm:h-20 justify-center items-center"}>
               <div>
                   <h1>
                       <span className={"lg:text-5xl md:text-2xl font-roboto-moto text-orange-500"}>{text}</span>
@@ -30,11 +30,11 @@ function FunFacts() {
                   </h1>
               </div>
           </div>
-          <div className={"flex flex-row justify-center"}>
-              <div className={"basis-1/3"}>
+          <div className={"flex lg:flex-row sm:flex-col justify-center"}>
+              <div className={"lg:basis-1/3 sm:mx-8 sm:mb-8"}>
                   <Fragment>
                       <Accordion open={open === 1} animate={customAnimation}>
-                          <AccordionHeader className={"text-gray-300 hover:text-gray-500 duration-500 border-orange-500"} onClick={() => handleOpen(1)}>
+                          <AccordionHeader className={"sm:text-start sm:text-lg text-gray-500 hover:text-gray-300 duration-500 border-orange-500"} onClick={() => handleOpen(1)}>
                               I`ve been drawing for more than 9 years!
                           </AccordionHeader>
                           <AccordionBody className={"font-roboto text-gray-400"}>
@@ -43,7 +43,7 @@ function FunFacts() {
                           </AccordionBody>
                       </Accordion>
                       <Accordion open={open === 2} animate={customAnimation}>
-                          <AccordionHeader className={"text-gray-300 hover:text-gray-500 duration-500 border-orange-500"} onClick={() => handleOpen(2)}>
+                          <AccordionHeader className={"sm:text-start sm:text-lg text-gray-500 hover:text-gray-300 duration-500 border-orange-500"} onClick={() => handleOpen(2)}>
                               I love video games!
                           </AccordionHeader>
                           <AccordionBody className={"font-roboto text-gray-400"}>
@@ -53,7 +53,7 @@ function FunFacts() {
                           </AccordionBody>
                       </Accordion>
                       <Accordion open={open === 3} animate={customAnimation}>
-                          <AccordionHeader className={"text-gray-300 hover:text-gray-500 duration-500 border-orange-500"} onClick={() => handleOpen(3)}>
+                          <AccordionHeader className={"sm:text-start sm:text-lg text-gray-500 hover:text-gray-300 duration-500 border-orange-500"} onClick={() => handleOpen(3)}>
                              Why Control and Automation Engineering?
                           </AccordionHeader>
                           <AccordionBody className={"font-roboto text-gray-400"}>
@@ -64,7 +64,7 @@ function FunFacts() {
                           </AccordionBody>
                       </Accordion>
                       <Accordion open={open === 7} animate={customAnimation}>
-                          <AccordionHeader className={"text-gray-300 hover:text-gray-500 duration-500 border-orange-500"} onClick={() => handleOpen(7)}>
+                          <AccordionHeader className={"sm:text-start sm:text-lg text-gray-500 hover:text-gray-300 duration-500 border-orange-500"} onClick={() => handleOpen(7)}>
                               When I started thinking about becoming a developer?
                           </AccordionHeader>
                           <AccordionBody className={"font-roboto text-gray-400"}>
@@ -75,7 +75,7 @@ function FunFacts() {
                           </AccordionBody>
                       </Accordion>
                       <Accordion open={open === 4} animate={customAnimation}>
-                          <AccordionHeader className={"text-gray-300 hover:text-gray-500 duration-500 border-orange-500"} onClick={() => handleOpen(4)}>
+                          <AccordionHeader className={"sm:text-start sm:text-lg text-gray-500 hover:text-gray-300 duration-500 border-orange-500"} onClick={() => handleOpen(4)}>
                               Favorite game?
                           </AccordionHeader>
                           <AccordionBody className={"font-roboto text-gray-400"}>
@@ -84,7 +84,7 @@ function FunFacts() {
                           </AccordionBody>
                       </Accordion>
                       <Accordion open={open === 5} animate={customAnimation}>
-                          <AccordionHeader className={"text-gray-300 hover:text-gray-500 duration-500 border-orange-500"} onClick={() => handleOpen(5)}>
+                          <AccordionHeader className={"sm:text-start sm:text-lg text-gray-500 hover:text-gray-300 duration-500 border-orange-500"} onClick={() => handleOpen(5)}>
                               Favorite color?
                           </AccordionHeader>
                           <AccordionBody className={"font-roboto text-gray-400"}>
@@ -92,7 +92,7 @@ function FunFacts() {
                           </AccordionBody>
                       </Accordion>
                       <Accordion open={open === 6} animate={customAnimation}>
-                          <AccordionHeader className={"text-gray-300 hover:text-gray-500 duration-500 border-orange-500"} onClick={() => handleOpen(6)}>
+                          <AccordionHeader className={"sm:text-start sm:text-lg text-gray-500 hover:text-gray-300 duration-500 border-orange-500"} onClick={() => handleOpen(6)}>
                               Favorite food?
                           </AccordionHeader>
                           <AccordionBody className={"font-roboto text-gray-400"}>

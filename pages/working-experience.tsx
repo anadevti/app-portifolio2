@@ -17,7 +17,7 @@ function WorkingExperience() {
     });
   return (
       <div className="pt-2 flex flex-col h-full w-full">
-          <div className={"flex h-40 justify-center items-center mb-4"}>
+          <div className={"flex lg:h-40 sm:h-20 justify-center items-center mb-4"}>
               <div>
                   <h1>
                       <span className={"lg:text-5xl md:text-2xl font-roboto-moto text-orange-500"}>{text}</span>
@@ -46,6 +46,7 @@ function WorkingExperience() {
                   </h3>
                   <h4 className="vertical-timeline-element-subtitle font-roboto-moto">Hotmart</h4>
                   <p className={"font-roboto"}>
+                      {/* eslint-disable-next-line react/no-unescaped-entities */}
                       - Development of KYC(Know Your Customer) automated solutions, as part of the company's theft and money laundering prevention initiatives. <br/>
                       - Agile methodologies: Scrum, Kanban. <br/>
                       - Technologies: Kotlin/Java, GraphQL, AWS(lines, Dynamo, topics, etc... ), Kibana, SonarQube <br/>
@@ -74,6 +75,7 @@ function WorkingExperience() {
                   </h3>
                   <h4 className="vertical-timeline-element-subtitle font-roboto-moto">Hotmart</h4>
                   <p className={"font-roboto"}>
+                      {/* eslint-disable-next-line react/no-unescaped-entities */}
                       - Development of KYC(Know Your Customer) automated solutions, as part of the company's theft and money laundering prevention initiatives. <br/>
                       - Agile methodologies: Scrum, Kanban. <br/>
                       - Technologies: Kotlin/Java, React + TypeScript, GraphQL, AWS(lines, Dynamo, topics, etc... ), Storybook <br/>
@@ -169,8 +171,10 @@ function WorkingExperience() {
                   <h3 className="vertical-timeline-element-title font-roboto font-bold text-background-dark text-xl">Brazilian High School</h3>
                   <h4 className="vertical-timeline-element-subtitle font-roboto-moto">Colégio Santo Agostinho, BH</h4>
                   <p className={"font-roboto"}>
+                      {/* eslint-disable-next-line react/no-unescaped-entities */}
                       Colégio Santo Agostinho offers an excellent, human, innovative, and sustainable education, within its mission to promote life through fraternity, education, and social justice guided by the motto "gente
-                      que forma gente."("people who graduates people.").
+                      {/* eslint-disable-next-line react/no-unescaped-entities */}
+                      que forma gente" (people who graduates people).
                   </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -192,8 +196,8 @@ function WorkingExperience() {
                   <h4 className="vertical-timeline-element-subtitle font-roboto-moto">Colégio Santo Agostinho and Atlantic Education International (AEI) - New Brunswick, Canada</h4>
                   <p className={"font-roboto"}>
                       A two years international education program provided by the province of New Brunswick and offered during High School for selected students. The purpose is to provide the opportunity to
-                      have a complete immersion in the Canadian culture and its educational system by ministering classes that are not offered in the Brazilian normal curriculum. All the classes are "only English
-                      environment" and taught by native Canadian/American teachers with the conclusion degree including IELTS proficiency test.
+                      have a complete immersion in the Canadian culture and its educational system by ministering classes that are not offered in the Brazilian normal curriculum. All the classes are only English
+                      environment and taught by native Canadian/American teachers with the conclusion degree including IELTS proficiency test.
                   </p>
               </VerticalTimelineElement>
           </VerticalTimeline>

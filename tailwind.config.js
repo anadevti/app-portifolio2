@@ -22,6 +22,7 @@ module.exports = withMT({
         'background-dark': '#0E1129',
       },
       height: {
+        '86': '22rem',
         '100': '26rem',
         '106': '30rem',
         '108': '36rem',

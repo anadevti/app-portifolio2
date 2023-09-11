@@ -32,12 +32,12 @@ export default function Home() {
             // Mobile
                 <div className="flex w-full h-full items-center flex-col">
                     <Image alt={"profileImage"} className={"rounded-full my-2"} src={Profile} width={150} height={150}></Image>
-                    <h2 className={"lg:text-5xl md:text-2xl lg:m-6 sm:m-2 text-gray-300 font-bold"}>Hi my name is</h2>
-                    <h1 className={"lg:h-24 sm:h-12 text-center text-orange-600 mx-3"}>
-                        <span className={"lg:text-5xl md:text-2xl font-roboto-moto"}>{text}</span>
+                    <h2 className={"sm:m-1 text-gray-300 font-bold"}>Hi my name is</h2>
+                    <h1 className={"sm:h-12 text-center text-orange-600 mx-3"}>
+                        <span className={"font-roboto-moto"}>{text}</span>
                         <Cursor cursorColor={"#FF8000"}/>
                     </h1>
-                    <div className={'grow h-80 w-full'}>
+                    <div className={'grow h-86 w-full'}>
                         <Spline scene="https://prod.spline.design/cTc4YaggUtUXs0AT/scene.splinecode"/>
                     </div>
                     <div className="flex flex-row items-center mx-6 my-2 grow">
@@ -48,9 +48,9 @@ export default function Home() {
                             <SocialIcon url="https://github.com/Wegxx"
                                         fgColor="white" bgColor={"transparent"} className={"cursor-pointer w-10 h-10 mt-1"}/>
                         </div>
-                        <p className={"p-4 text-left text-gray-300 font-roboto text-sm"}>
+                        <p className={"p-4 text-gray-300 font-roboto text-sm "}>
                             Automated smart solutions studant and fascinated by programming and development I believe is possible to change
-                            people’s lives with creativity, agility and technology. I'm currently 21 years old and bachelor's graduating
+                            people’s lives with creativity, agility and technology. I am currently 21 years old and graduating
                             in Control and Automation Engineering by PUC Minas. Today, along with my studies, I work as Backend Developer
                             for Hotmart 🚀🔥and I must say that I’m completely involved in the career. With more than
                             seven years of drawing by passion, in my free time over the last one and a half years, I accomplished dozens of
@@ -76,9 +76,9 @@ export default function Home() {
                         <span className={"lg:text-5xl md:text-2xl font-roboto-moto"}>{text}</span>
                         <Cursor cursorColor={"#FF8000"}/>
                     </h1>
-                    <p className={"p-10 text-left text-gray-300 font-roboto"}>
+                    <p className={"p-10 text-gray-300 font-roboto text-justify mx-auto max-w-3xl"}>
                         Automated smart solutions studant and fascinated by programming and development I believe is possible to change
-                        people’s lives with creativity, agility and technology. I'm currently 21 years old and bachelor's graduating
+                        people’s lives with creativity, agility and technology. I am currently 21 years old and graduating
                         in Control and Automation Engineering by PUC Minas. Today, along with my studies, I work as Backend Developer
                         for Hotmart 🚀🔥and I must say that I’m completely involved in the career. With more than
                         seven years of drawing by passion, in my free time over the last one and a half years, I accomplished dozens of

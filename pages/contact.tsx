@@ -6,8 +6,8 @@ import {
 
 function Contact() {
   return (
-      <div className={"flex h-122 justify-center items-center"}>
-          <Card color="transparent" shadow={false}>
+      <div className={"flex sm:h-106 lg:h-122 justify-center items-center"}>
+          <Card className="lg:p-1 sm:pl-16 sm:pr-4 sm:pt-4" color="transparent" shadow={false}>
               <Typography variant="h4" className={"font-roboto text-gray-300"}>
                   Personal Contact
               </Typography>
