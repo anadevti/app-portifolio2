@@ -42,7 +42,7 @@ function WorkingExperience() {
                       }
                   </div>
                   <h3 className="vertical-timeline-element-title font-roboto font-bold text-background-dark text-xl">
-                     Backend Developer I
+                      Software Engineer I
                   </h3>
                   <h4 className="vertical-timeline-element-subtitle font-roboto-moto">Hotmart</h4>
                   <p className={"font-roboto"}>
