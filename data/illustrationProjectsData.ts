@@ -47,7 +47,7 @@ export const projectsIllustration: ICard[] = [
         image: ConceptKoby
     },
     {
-        title: "Koby",
+        title: "Fall Forest",
         description: "This project was a freelancer made during my partnership with @harugraphcs(twitter). The idea was to create " +
             "a fall forest for a Twitch background.",
         technologies: forestWallpaperTechlonogies,
