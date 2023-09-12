@@ -29,7 +29,7 @@ const ServiceCard: FunctionComponent<{ card: ICard }> = ({card:{technologies, de
                         <icon.Icon className={"mr-1"} color={"white"}/>
                     </Tooltip> )
                 }
-                <a href={link}>
+                <a href={link} target="_blank" rel="noreferrer">
                     <Button color={'purple'} key={"gitHub"}>
                         See on ArtStation
                     </Button>
