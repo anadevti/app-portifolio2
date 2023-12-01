@@ -31,7 +31,7 @@ const ServiceCard: FunctionComponent<{ card: ICard }> = ({card:{technologies, de
                 }
                 <a href={link} target="_blank" rel="noreferrer">
                     <Button color={'orange'} key={"gitHub"}>
-                        See on GitHub now
+                        See on GitHub
                     </Button>
                 </a>
             </CardFooter>
