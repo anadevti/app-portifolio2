@@ -4,16 +4,19 @@ import {SocialIcon} from "react-social-icons";
 import Image from "next/image";
 import Profile from "../resources/ProfilePic.png"
 import {useEffect, useState} from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function Home() {
-  const [text] = useTypewriter({
-    words: [
-      "<Giovanna Nascimento Reis/>",
-      "<Wegx for gaming friends/>",
-      "<The girl who loves to draw and code/>"
-    ],
-    loop: true,
-    delaySpeed: 2000,
-  });
+    const [text] = useTypewriter({
+        words: [
+        "<Giovanna Nascimento Reis/>",
+        "<Wegx for gaming friends/>",
+        "<The girl who loves to draw and code/>"
+        ],
+        loop: true,
+        delaySpeed: 2000,
+    });
+
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -27,10 +30,25 @@ export default function Home() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    useEffect(() => {
+        const notify = () => toast("This website features 3D assets that require your browser's hardware acceleration. "+ 
+        "If you have it disabled, it is strongly recommended that you turn it on for better performance.");
+        notify();
+    }, []);
+
     return (
         isMobile ? (
             // Mobile
                 <div className="flex w-full h-full items-center flex-col">
+                    <ToastContainer
+                        position="bottom-right"
+                        autoClose={false}
+                        closeOnClick
+                        rtl={false}
+                        draggable
+                        pauseOnHover
+                        theme="dark"
+                    />
                     <Image alt={"profileImage"} className={"rounded-full my-2"} src={Profile} width={150} height={150}></Image>
                     <h2 className={"sm:m-1 text-gray-300 font-bold"}>Hi my name is</h2>
                     <h1 className={"sm:h-12 text-center text-orange-600 mx-3"}>
@@ -50,7 +68,7 @@ export default function Home() {
                         </div>
                         <p className={"p-4 text-gray-300 font-roboto text-sm "}>
                             Automated smart solutions studant and fascinated by programming and development I believe is possible to change
-                            people’s lives with creativity, agility and technology. I am currently 21 years old and graduating
+                            people’s lives with creativity, agility and technology. I am currently 22 years old and graduating
                             in Control and Automation Engineering by PUC Minas. Today, along with my studies, I work as Software Engineer
                             for Hotmart 🚀🔥and I must say that I’m completely involved in the career. With more than
                             seven years of drawing by passion, in my free time over the last one and a half years, I accomplished dozens of
@@ -61,6 +79,15 @@ export default function Home() {
             : (
                 // Desktop
             <div className="flex w-full h-full my-5 items-center flex-row">
+                <ToastContainer
+                    position="bottom-right"
+                    autoClose={false}
+                    closeOnClick
+                    rtl={false}
+                    draggable
+                    pauseOnHover
+                    theme="dark"
+                />
             <div className="flex flex-row lg:basis-1/2 lg:pl-10">
                 <div className="flex flex-col items-center">
                     <div style={{height:'33rem'}} className={"w-1 bg-gradient-to-b from-orange-600 to-purple-600"}></div>
@@ -78,7 +105,7 @@ export default function Home() {
                     </h1>
                     <p className={"p-10 text-gray-300 font-roboto text-justify mx-auto max-w-3xl"}>
                         Automated smart solutions studant and fascinated by programming and development I believe is possible to change
-                        people’s lives with creativity, agility and technology. I am currently 21 years old and graduating
+                        people’s lives with creativity, agility and technology. I am currently 22 years old and graduating
                         in Control and Automation Engineering by PUC Minas. Today, along with my studies, I work as Software Engineer
                         for Hotmart 🚀🔥and I must say that I’m completely involved in the career. With more than
                         seven years of drawing by passion, in my free time over the last one and a half years, I accomplished dozens of
