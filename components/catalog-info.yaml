@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Portifolio da Gi
+  description: Portifolio da Gi
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: Wegxx/app-portifolio2
+    pagerduty.com/service-id: P26ZDZH
+spec:
+  type: website
+  lifecycle: production
+  owner: anadevti
