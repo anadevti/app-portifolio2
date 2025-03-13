@@ -5,7 +5,7 @@ metadata:
   description: Portifolio da Gi
   annotations:
     backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: Wegxx/app-portifolio2
+    github.com/project-slug: 
     pagerduty.com/service-id: P26ZDZH
 spec:
   type: website
